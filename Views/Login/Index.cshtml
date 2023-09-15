@@ -1,0 +1,23 @@
+﻿@model User
+
+
+<h2>Login</h2>
+
+<form method="post" asp-action="Index" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Username : </label>
+        <input type="text" class="form-control" asp-for="Username" required>
+        <span asp-validation-for="Username" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Password : </label>
+        <input type="text" class="form-control" asp-for="Password" required>
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <div></div>
+    <button type="submit" asp-action="Dashboard" class="btn btn-primary">Login</button>
+
+</form>
+
+
